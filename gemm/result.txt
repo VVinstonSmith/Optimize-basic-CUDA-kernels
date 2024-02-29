@@ -1,0 +1,37 @@
+
+
+$gemm_scalar
+##THREAD_SPLIT: 
+dimGrid(8, 8)
+dimBlock(16, 16)
+My gemm performance= 531.62 GFlops, Time= 4.040 msec, size= 2147483648 Ops
+cublas  performance= 714.94 GFlops, Time= 3.004 msec, size= 2147483648 Ops
+check success!
+##THREAD_MERGE:
+dimGrid(8, 8)
+dimBlock(16, 16)
+My gemm performance= 429.02 GFlops, Time= 5.006 msec, size= 2147483648 Ops
+cublas  performance= 715.13 GFlops, Time= 3.003 msec, size= 2147483648 Ops
+check success!
+
+$gemm_float4
+##THREAD_SPLIT: 
+dimGrid(8, 8)
+dimBlock(16, 16)
+My gemm performance= 331.85 GFlops, Time= 6.471 msec, size= 2147483648 Ops
+cublas  performance= 716.52 GFlops, Time= 2.997 msec, size= 2147483648 Ops
+check success!
+##THREAD_MERGE:
+dimGrid(8, 8)
+dimBlock(16, 16)
+My gemm performance= 35.24 GFlops, Time= 60.942 msec, size= 2147483648 Ops
+cublas  performance= 717.07 GFlops, Time= 2.995 msec, size= 2147483648 Ops
+check success!
+
+$gemm_dbuf
+dimGrid(8, 8)
+My gemm performance= 591.01 GFlops, Time= 3.634 msec, size= 2147483648 Ops
+cublas  performance= 717.64 GFlops, Time= 2.992 msec, size= 2147483648 Ops
+check success!
+
+
