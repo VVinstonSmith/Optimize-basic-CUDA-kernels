@@ -1,5 +1,5 @@
 #  optimize basic kernels for GPU
-This is a series of GPU optimization topics. Here we introduce several basic kernel optimizations, including: Reduce, GEMM, GEMV, SPMV, Softmax, etc. All the following performance data are run in CUDA environment.
+This is a series of GPU optimization topics. Here we introduce several basic CUDA kernel optimizations, including: Reduce, GEMM, GEMV, SPMV, Softmax, etc. All the following performance data are run in CUDA environment.
 
 If you have any questions, you can directly contact: 1148399054@qq.com
 
